@@ -1,0 +1,29 @@
+# Handle line endings automatically for files detected as text
+# and leave all files detected as binary untouched
+*text eol=crlf
+
+# Never modify line endings of our bash/cmd/powershell/batch scripts
+*.bat -crlf
+*.sh -crlf
+*.ps1 -crlf
+
+# The above will handle all files not found below
+
+# These files are text and should be normalized (convert lf => crlf)
+*.css			text
+*.html			text
+*.js			text
+*.jsx			text
+*.ts			text
+*.tsx			text
+*.json			text
+*.properties	text
+*.txt			text
+*.xml			text
+
+# These files are binary and should be left untouched
+# (binary is macro for -text -diff)
+*.class			binary
+*.gif			binary
+*.jpg			binary
+*.png			binary

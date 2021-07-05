@@ -1,0 +1,54 @@
+{
+	"name": "react_boilerplate_js",
+	"version": "0.1.0",
+	"description": "A basic boilerplate for react app using javascript.",
+	"author": "avi.mishra",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"build": "cross-env NODE_ENV=production webpack --config configs/webpack.config.prod.js",
+		"start": "cross-env NODE_ENV=localhost webpack serve --hot --inline --config configs/webpack.config.dev.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"dependencies": {
+		"path": "^0.12.7",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.14.6",
+		"@svgr/webpack": "^5.5.0",
+		"babel-loader": "^8.2.2",
+		"cross-env": "^7.0.3",
+		"css-loader": "^5.2.6",
+		"eslint": "^7.30.0",
+		"eslint-config-airbnb": "^18.2.1",
+		"eslint-config-airbnb-base": "^14.2.1",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-import": "^2.23.4",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-prettier": "^3.4.0",
+		"eslint-plugin-react": "^7.24.0",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"file-loader": "^6.2.0",
+		"html-webpack-plugin": "^5.3.2",
+		"prettier": "^2.3.2",
+		"style-loader": "^3.0.0",
+		"url-loader": "^4.1.1",
+		"webpack": "^5.42.1",
+		"webpack-cli": "^4.7.2",
+		"webpack-dev-server": "^3.11.2",
+		"webpack-merge": "^5.8.0"
+	},
+	"browserslist": [
+		"last 2 versions",
+		"not dead",
+		"> 0.5%",
+		"IE 10"
+	],
+	"devEngines": {
+		"node": ">=7.x",
+		"npm": ">=4.x",
+		"yarn": ">=1.20.3"
+	}
+}

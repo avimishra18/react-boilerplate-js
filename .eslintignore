@@ -1,0 +1,9 @@
+# Node Modules
+node_modules
+
+# App packaged
+dist
+
+# Logs
+logs
+*.log
